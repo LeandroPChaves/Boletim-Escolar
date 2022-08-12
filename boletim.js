@@ -39,12 +39,21 @@
     }
 
     if (media >= 7){
-        alert (`O(a) aluno(a) ${nome} foi aprovado com a média ${media}.`);
+        // alert (`O(a) aluno(a) ${nome} foi aprovado com a média ${media}.`);
+        var res = document.getElementsByTagName('p')[0]
+        res.innerText = `O(a) aluno(a) ${nome} foi aprovado com a média ${media}.`
+
      } else if (media >= 5 && media < 7){
-        alert (`O(a) aluno(a) ${nome} está de recuperação. média ${media}.`);
+        //alert (`O(a) aluno(a) ${nome} está de recuperação. média ${media}.`);
+        var res = document.getElementsByTagName('p')[0]
+        res.innerText = `O(a) aluno(a) ${nome} está de recuperação. média ${media}.`
+
       } else {
-        alert (`O(a) aluno(a) ${nome} foi reprovado com a média ${media}.`);
+        //alert (`O(a) aluno(a) ${nome} foi reprovado com a média ${media}.`);
+        var res = document.getElementsByTagName('p')[0]
+        res.innerText = `O(a) aluno(a) ${nome} foi reprovado com a média ${media}.`
        }
+
 }
 
 function ApenasLetras(e, t) {
